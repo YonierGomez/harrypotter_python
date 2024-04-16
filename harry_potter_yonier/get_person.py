@@ -1,15 +1,12 @@
 import requests
 
-def obtener_personaje(URL):
-    
-    
+def obtener_personajes(URL):
     r = requests.get(URL)
-    
     if r.ok:
         respuesta = r.json()
-        
-        for r in respuesta:
-            print(f'Hola, soy "{r["name"]}" y pertenezco a la casa "{r["name"]}".')
+        for personaje in respuesta:
+            mensaje = f'Hola, soy "{personaje["name"]}" y pertenezco a la casa "{personaje["house"]}".'
+            print(mensaje)
 
 if __name__ == "__main__":
-    obtener_personaje(URL = "https://hp-api.onrender.com/api/characters")
+    obtener_personajes(URL="https://hp-api.onrender.com/api/characters")
