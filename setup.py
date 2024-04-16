@@ -4,7 +4,7 @@ from setuptools import setup
 this_directory = Path(__file__).parent
 long_description = (this_directory / "README.md").read_text()
 
-VERSION = 'v1.2'
+VERSION = 'v1.3'
 DESCRIPTION = 'Permite consumir el API de Harry Potter para obtener o listar personajes'
 PACKAGE_NAME = 'harry_potter_yonier'
 AUTHOR = 'Yonier Asprilla'
@@ -16,7 +16,7 @@ setup(
     packages = [PACKAGE_NAME],
     entry_points={
         "console_scripts":
-            ["pycody=harry_potter_yonier.__main__:main"]
+            ["yonierpotter=harry_potter_yonier.__main__"]
     },
     version = VERSION,
     license='MIT',
