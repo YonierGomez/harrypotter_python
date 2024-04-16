@@ -16,7 +16,7 @@ setup(
     packages = [PACKAGE_NAME],
     entry_points={
         "console_scripts":
-            ["yonierpotter=harry_potter_yonier.__main__"]
+            ["yonierpotter=harry_potter_yonier.__main__:call_me"]
     },
     version = VERSION,
     license='MIT',
