@@ -4,8 +4,8 @@ from setuptools import setup
 this_directory = Path(__file__).parent
 long_description = (this_directory / "README.md").read_text()
 
-VERSION = 'v1.4'
-DESCRIPTION = 'Permite consumir el API de Harry Potter para obtener o listar personajes'
+VERSION = 'v1.5'
+DESCRIPTION = 'Permite consumir la API de Harry Potter para obtener o listar personajes'
 PACKAGE_NAME = 'harry_potter_yonier'
 AUTHOR = 'Yonier Asprilla'
 EMAIL = 'yoonier13@gmail.com'
