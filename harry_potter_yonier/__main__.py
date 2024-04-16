@@ -1,3 +1,4 @@
+import logging
 from harry_potter_yonier import get_one_person, get_person
 
 if __name__ == "__main__":
@@ -19,7 +20,7 @@ if __name__ == "__main__":
             get_person.obtener_personajes(URL="https://hp-api.onrender.com/api/characters")
             break  # Salir del bucle while
         elif choose == "3":
-            print("Saliendo del programa...")
+            logging.warning("Saliendo del programa...")
             break  # Salir del bucle while
         else:
-            print("Opción inválida. Por favor, elija una opción válida.")
+            logging.warning("Opción inválida. Por favor, elija una opción válida.")

@@ -1,8 +1,8 @@
 import requests
 
 def obtener_personajes(URL, PERSONAJE):
+    """Obtiene un personaje de Harry Potter"""
     r = requests.get(URL)
-    
     if r.ok:
         respuesta = r.json()       
         for r in respuesta:
