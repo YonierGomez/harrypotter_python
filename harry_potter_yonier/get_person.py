@@ -1,9 +1,11 @@
 import requests
 
-def obtener_personajes(URL):
+def get_person():
     """Obtiene todos los personajes de Harry Potter
-    >>> type(obtener_personajes(URL="https://hp-api.onrender.com/api/characters"))
+    >>> type(get_person(URL="https://hp-api.onrender.com/api/characters"))
     """
+    
+    URL="https://hp-api.onrender.com/api/characters"
     r = requests.get(URL)
     if r.ok:
         respuesta = r.json()
@@ -12,4 +14,4 @@ def obtener_personajes(URL):
             print(mensaje)
 
 if __name__ == "__main__":
-    obtener_personajes(URL="https://hp-api.onrender.com/api/characters")
+    get_person()

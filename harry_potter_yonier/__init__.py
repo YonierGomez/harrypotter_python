@@ -1,1 +1,2 @@
-from harry_potter_yonier import get_one_person
+from harry_potter_yonier.get_one_person import get_one_person
+from harry_potter_yonier.get_person import get_person

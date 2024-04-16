@@ -12,12 +12,10 @@ if __name__ == "__main__":
         choose = input("Ingrese el número de la opción que desea: ")
         
         if choose == "1":
-            buscar_personaje = input("Ingrese el nombre del personaje que desea buscar: ")
-            final_get_one = get_one_person.obtener_personajes(URL="https://hp-api.onrender.com/api/characters", PERSONAJE=buscar_personaje)
-            print(final_get_one)
+            get_one_person()
             break  # Salir del bucle while
         elif choose == "2":
-            get_person.obtener_personajes(URL="https://hp-api.onrender.com/api/characters")
+            get_person()
             break  # Salir del bucle while
         elif choose == "3":
             logging.warning("Saliendo del programa...")
